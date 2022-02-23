@@ -24,6 +24,13 @@
   width: 80%;
   margin: 15px;
   padding:6px 10px;
+  background-color: transparent;
+  transition: .5s;
+}
+.login_host_form-form input:focus,
+.signup_host_form-form input:focus{
+  background-color:rgb(255, 189, 128) ;
+  transition: .5s;
 }
 #host-button{
   width: 30%;
@@ -36,7 +43,7 @@
   border-bottom: 1px solid black;
 }
 .host_form-form ul li:hover{
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid rgb(250, 190, 80);
   transition: .5s;
 }
 

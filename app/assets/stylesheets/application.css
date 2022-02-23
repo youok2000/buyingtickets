@@ -20,9 +20,11 @@
 a{
   text-decoration: none;
   color: black;
+  transition: .3s;
 }
 a:hover{
-  opacity: .8;
+  opacity: .6;
+  transition: .3s;
 }
 li{
   list-style:none ;

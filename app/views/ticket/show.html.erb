@@ -1,0 +1,15 @@
+<div class="show-contents">
+  <h2>詳細</h2>
+  <div class="show-form">
+    <ul>
+      <li>整理番号:<i><%= @ticket.id%></i></li>
+      <li>名前:<i><%= @ticket.name%></i></li>
+      <li>チケットタイプ:<i><%= @ticket.gender%></i></li>
+      <li>電話番号:<i><%= @ticket.phone_number%></i></li>
+      <li>Eメール:<i><%= @ticket.email%></i></li>
+    </ul>
+    <div class="destroy-function">
+      <%= link_to("データの削除", "/ticket/destroy/#{@ticket.id}", {method: 'post'} )%>
+    </div>
+  </div>
+</div>

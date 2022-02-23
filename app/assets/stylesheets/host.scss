@@ -1,0 +1,42 @@
+// Place all the styles related to the host controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.host_form-contents,
+.login_host_form-contents,
+.signup_host_form-contents{
+  margin:10px 0 0 60px;
+}
+.host_form-form,
+.login_host_form-form,
+.signup_host_form-form{
+  padding: 30px;
+  width: 30%;
+  text-align: center;
+}
+.host_form-form p{
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.login_host_form-form input,
+.signup_host_form-form input{
+  width: 80%;
+  margin: 15px;
+  padding:6px 10px;
+}
+#host-button{
+  width: 30%;
+  padding:  5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px;
+}
+.host_form-form ul li{
+  margin: 10px 10px 20px 10px;
+  border-bottom: 1px solid black;
+}
+.host_form-form ul li:hover{
+  border-bottom: 1px solid orange;
+  transition: .5s;
+}
+

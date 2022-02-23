@@ -1,0 +1,10 @@
+<div class="login_host_form-contents">
+  <h2>ログイン画面</h2>
+  <div class="login_host_form-form">
+    <%=form_tag("/host/login_host") do %>
+      <input name="name" placeholder="name" autocomplete="off">
+      <input name="password" placeholder="password" autocomplete="off">
+      <input id = "host-button" type="submit" value="ログイン">
+    <%end%>
+  </div>
+</div>

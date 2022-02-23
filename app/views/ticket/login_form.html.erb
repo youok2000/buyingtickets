@@ -1,0 +1,10 @@
+<div class="login_form-contents">
+  <h2>チケットを表示する</h2>
+  <%= form_tag("/ticket/login") do%>
+    <div class="login-ticket-form">
+      <input name="name" placeholder="名前" autocomplete="off">
+      <input name="phone_number" placeholder="電話番号" autocomplete="off">
+    </div>
+    <input class="button" type="submit" value="チケットを表示する"> 
+  <%end%>
+</div>

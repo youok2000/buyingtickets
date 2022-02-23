@@ -1,0 +1,10 @@
+<div class="signup_host_form-contents">
+  <h2>管理者追加する</h2>
+  <div class="signup_host_form-form">
+    <%= form_tag("/host/create") do%>
+      <input name="name" placeholder="name"  autocomplete="off">
+      <input name="password" placeholder="password"  autocomplete="off">
+      <input id="host-button" type="submit" value="登録">
+    <%end%>
+  </div>
+</div>

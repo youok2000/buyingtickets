@@ -1,0 +1,105 @@
+// Place all the styles related to the ticket controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//informationページ
+// login_formページ
+// index ページ
+// show ページ
+.information-contents,
+.login_form-contents,
+.index-contents,
+.show-contents{
+  margin: 10px 80px;
+}
+.information-form,
+.login-ticket-form,
+.index-form,
+.show-form{
+  padding: 30px;
+  width: 40%;
+}
+.show-form li{
+  padding: 10px;
+  margin: 20px 0;
+}
+.show-form li i{
+  margin-left: 10px;
+  border-bottom: 2px solid rgb(85, 83, 83);
+  transition: .5s;
+}
+.show-form li i:hover{
+  border-bottom: 2px solid rgb(248, 178, 178);
+  transition: .5s;
+}
+.index-form span{
+  display: block;
+  text-align:center ;
+  margin: 20px 0;
+  padding: 6px 0;
+  border-bottom: 1px solid rgb(78, 78, 78);
+}
+.information-form input,
+.information-form select,
+.login-ticket-form input{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin:10px 0px ;
+  
+}
+.button{
+  width: 15%;
+  margin-left: 13%;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+// login_formページ
+.login-ticket-form input{
+  background-color: transparent;
+  transition: .4s;
+}
+.login-ticket-form input:focus{
+  background-color:rgb(248, 185, 195) ;
+  transition: .3s;
+  outline: none;
+}
+
+// inputコーディング（informationページ）
+.information-form input:focus{
+  outline: none;
+}
+.input-coding{
+  position: relative;
+}
+.i~span::before{
+  position: absolute;
+  content: "";
+  bottom: 9px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(252, 152, 169);
+  transition: 1s;
+  transition-delay: .3s;
+}
+.i:focus~span::before{
+  width:100% ;
+  transition: .2s;
+}
+.i~span i::before{
+  position: absolute;
+  content: "";
+  bottom: 9px;
+  right: 0;
+  width: 2px;
+  height: 0;
+  background-color: rgb(252, 152, 169);
+  transition: .6s;
+}
+.i:focus~span i::before{
+  height: 70%;
+  transition: .2s;
+  transition-delay: .3s;
+}

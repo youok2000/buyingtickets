@@ -1,0 +1,10 @@
+<div class="index-contents">
+  <h2>チケット購入者一覧です</h2>
+  <div class="index-form">
+    <% @tickets.each do |ticket|%>
+      <%=link_to("/show/#{ticket.id}") do %>
+        <span><%= ticket.name%></span>
+      <%end%>
+    <%end%>
+  </div>
+</div>

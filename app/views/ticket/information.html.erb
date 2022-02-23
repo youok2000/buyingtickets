@@ -1,0 +1,35 @@
+
+<div class="information-contents">
+  <h2>購入手続きページ</h2>
+
+   <%= form_tag('/ticket/create') do%>
+
+    <div class="information-form">
+
+      <select  name="gender">
+        <option value="">チケットの種類</option>
+        <option value="type-1">type-1</option>
+        <option value="type-2">type-2</option>
+      </select>
+
+      <div class="input-coding">
+       <input class="i" name="name" placeholder="名前" autocomplete="off">
+       <span><i></i></span>
+      </div>
+
+      <div class="input-coding">
+       <input class="i" name="phone_number" placeholder="電話番号" autocomplete="off">
+       <span><i></i></span>
+      </div>
+
+      <div class="input-coding">
+       <input class="i" name="email" placeholder = "Eメール" autocomplete="off">
+       <span><i></i></span>
+      </div>
+
+    </div>
+
+    <input  class="button" type="submit" value="チケット購入">
+   <%end%>
+
+</div>

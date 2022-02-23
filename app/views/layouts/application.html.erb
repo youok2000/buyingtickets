@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BuyingTickets</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <header>
+
+
+      <%if @login_ticket %>
+        <div class="online-ticket">
+            <span>オンラインチケット</span>
+            <div class="login-ticket-name">
+              <p>お名前：<%= @login_ticket.name%></p>
+            </div>
+            <div class="login-ticket-id">
+              <p>整理番号：<%=@login_ticket.id%></p>
+            </div>
+            <div class="online-ticket-close">
+              <%= link_to("チケットを非表示にする","/ticket/logout", {method: "post"})%>
+            </div>
+        </div>
+        
+
+     <% else%>
+
+        <%= link_to("/") do%>
+          <h1>Buying tickets</h1>
+        <%end%>
+        <ul class="header-list"> 
+          <li><%= link_to("チケットを購入", "/information")%></li>
+          <li><%= link_to("購入したチケットを表示", "/login_form")%></li>
+          <li><%= link_to("管理者の方はこちら", "/host_form")%></li>
+        </ul>
+
+     <%end%>
+    </header>
+
+    <% if flash[:notice] %>
+     <div class="flash-notice">
+       <%= flash[:notice] %>
+     </div>
+    <% end %>
+
+    <% if flash[:false] %>
+     <div class="flash-false">
+       <%= flash[:false] %>
+     </div>
+    <% end %>
+
+    <% if flash[:host] %>
+     <div class="flash-host">
+       <%= flash[:host] %>
+     </div>
+    <% end %>
+
+    <% if flash[:ok] %>
+     <div class="flash-ok">
+       <%= flash[:ok] %>
+     </div>
+    <% end %>
+
+
+
+
+
+    
+
+   <%= yield %>
+  </body>
+</html>

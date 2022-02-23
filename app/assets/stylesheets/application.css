@@ -63,7 +63,7 @@ header{
 
 .flash-notice{
   color: white;
-  background-color: rgb(92, 92, 247);
+  background-color: #726e70;
 }
 .flash-false{
   color: white;
@@ -82,40 +82,56 @@ header{
 .online-ticket{
   position: fixed;
   z-index: 100;
-  height: 60%;
-  width: 60%;
-  top:16%;
+  height: 40%;
+  width: 65%;
+  top:25%;
   left: 20%;
-  background: #b3d2f5;
-  box-shadow: 5px 5px 6px black;
+  background: #f5d4e5;
+  box-shadow: 25px 25px 20px rgb(219, 218, 218);
   transition: .4s;
-  border-radius: 7px;
+  border-radius: 20px;
+  border: .5px solid rgb(109, 108, 108);
 }
 .online-ticket span{
   position:absolute;
   top: 20px;
   left: 30px;
   font-size: 25px;
-  font-weight: bolder;
   border-bottom: 1px solid black;
 }
+.online-ticket-main{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height:100% ;
+  width: 30%;
+  border-left: 1.8px dashed rgb(116, 113, 113) ;
+}
+.login-ticket-id,
 .login-ticket-name{
-  position: absolute;
-  top: 46%;
-  left: 24%;
-  font-size: 30px;
+  box-sizing: border-box;
+  display: flex;
+  padding: 20px 0px 0px 30px;
 }
 
-.login-ticket-id{
-  position: absolute;
-  top: 27%;
-  left: 20%;
-  font-size: 30px;
+.login-ticket-id p:nth-child(2){
+  margin-left: 20%;
+  padding: 0 9px;
+  background-color: white;
+  border: 1px solid rgb(104, 101, 101);
+  border-radius: 4px;
 }
-
+.login-ticket-name p:nth-child(2){
+  margin-left: 10%;
+  padding: 0 9px;
+  background-color: white;
+  border: 1px solid rgb(114, 109, 109);
+  border-radius: 4px;
+}
 .online-ticket-close{
   position: absolute;
-  top: 20px;
-  right: 20px;
-
+  top: -15%;
+  right: 8px;
+  font-size: 20px;
+  padding: 5px;
 }

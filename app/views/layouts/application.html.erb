@@ -15,17 +15,26 @@
 
 
       <%if @login_ticket %>
+
         <div class="online-ticket">
-            <span>オンラインチケット</span>
-            <div class="login-ticket-name">
-              <p>お名前：<%= @login_ticket.name%></p>
-            </div>
-            <div class="login-ticket-id">
-              <p>整理番号：<%=@login_ticket.id%></p>
-            </div>
-            <div class="online-ticket-close">
-              <%= link_to("チケットを非表示にする","/ticket/logout", {method: "post"})%>
-            </div>
+
+           <div class="online-ticket-header">
+              <span>Online ticket</span>
+              <div class="online-ticket-close">
+                <%= link_to("close","/ticket/logout", {method: "post"})%>
+              </div>
+           </div>
+           <div  class="online-ticket-main">
+              <div class="login-ticket-id">
+                <p>ID</p>
+                <p><%=@login_ticket.id%></p>
+              </div>
+              <div class="login-ticket-name">
+                <p>Name</p>
+                <p><%= @login_ticket.name%></p>
+              </div>
+           </div>
+
         </div>
         
 

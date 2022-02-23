@@ -2,6 +2,7 @@
   <h2>チケット購入者一覧です</h2>
   <div class="index-form">
     <% @tickets.each do |ticket|%>
+      <input type="checkbox">
       <%=link_to("/show/#{ticket.id}") do %>
         <span><%= ticket.name%></span>
       <%end%>

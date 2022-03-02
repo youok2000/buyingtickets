@@ -50,7 +50,8 @@ header{
 .flash-notice,
 .flash-false,
 .flash-host,
-.flash-ok{
+.flash-ok,
+.flash-success{
   width: 100%;
   box-sizing: border-box;
   padding: 15px 0px;
@@ -78,6 +79,10 @@ header{
 .flash-ok{
   color: white;
   background-color: rgb(253, 152, 57);
+}
+.flash-success{
+  color: white;
+  background-color: rgb(66, 65, 65);
 }
 
 /* オンラインチケット表示 */

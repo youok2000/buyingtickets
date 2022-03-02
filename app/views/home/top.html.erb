@@ -3,6 +3,9 @@
   </div>
 <%else%>
   <div class="top-contents">
-    <h2>Home#top</h2>
+    <span>お知らせ</span>
+    <% @posts.each do  |post| %>
+      <div class="news-list"><%=link_to(post.title, "/post/show/#{post.id}") %></div>
+    <%end%>
   </div>
   <%end%>

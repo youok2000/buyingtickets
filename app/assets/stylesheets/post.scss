@@ -1,0 +1,52 @@
+// Place all the styles related to the post controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.post-new-contents{
+  margin:5% 10% ;
+}
+.post-new-contents h1 span{
+  font-weight: normal;
+  font-size: 15px;
+}
+.post-new-form{
+  text-align: center;
+  margin-left: 8%;
+  padding: 20px;
+  width: 60%;
+}
+.post-new-item input,
+.post-new-item textarea{
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  padding:20px 10px ;
+}
+
+.post-new-button{
+  padding:5px 10px ;
+  border-radius: 4px;
+}
+
+// post-show
+
+.post-show-contents{
+  width: 60%;
+  margin: 10% auto;
+
+}
+
+.post-show-header{
+  // text-align: center;
+  // border: 1px solid black;
+  padding:6px 0 ;
+  margin-bottom: 6%;
+  margin-left: 4%;
+}
+
+.post-show-item{
+  border: 1px solid black;
+  padding: 16px;
+  text-align: left;
+  margin-left: 4%;
+}

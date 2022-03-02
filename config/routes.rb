@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  get 'post/new' => 'post#new'
+
+  post 'post/create' => 'post/create'
+
   post 'ticket/create' => 'ticket#create' 
   post 'ticket/login' => 'ticket#login'
   post 'ticket/logout' => 'ticket#logout'
@@ -21,5 +25,6 @@ Rails.application.routes.draw do
   get 'show/:id' => 'ticket#show'
  
   post 'ticket/destroy/:id' => 'ticket#destroy'
+  get  'post/show/:id' => 'post#show'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

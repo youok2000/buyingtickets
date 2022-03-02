@@ -7,5 +7,24 @@
   opacity: 0.5;
 }
 .top-contents{
-  margin:10px 0 0 60px;
+  margin:10px 60px 0 60px;
+  border: 1px solid black;
+}
+
+// post-show
+
+.news-list{
+  margin: 3% 10%;
+  padding: 5px;
+  // text-align: left;
+}
+.top-contents span{
+  display: inline-block;
+  margin: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+.news-list a{
+  border-bottom: 2px solid rgb(97, 95, 95);
 }

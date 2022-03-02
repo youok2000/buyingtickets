@@ -1,0 +1,15 @@
+<div class="post-new-contents">
+  <h1>Post#new<span>（※contentsを書く欄は右下のつまみでサイズ変更できます）</span></h1>
+
+  <div class="post-new-form">
+    <%= form_tag ('/post/create') do%>
+      <div class="post-new-item">
+
+        <input name="title" autocomplete="off" placeholder="title">
+        <textarea name = "contents" autocomplete="off" placeholder="contents"></textarea>
+
+      </div>
+      <input type="submit" value ="投稿" class="post-new-button"> 
+    <%end%>
+  </div>
+</div>

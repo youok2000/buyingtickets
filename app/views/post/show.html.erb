@@ -1,0 +1,11 @@
+<div class="post-show-contents">
+
+  <div class="post-show-header">
+    <%= @post.title%>
+  </div>
+
+  <div class="post-show-item">
+    <%=safe_join(@post.contents.split("\n"),tag(:br))%>
+  </div>
+
+</div>

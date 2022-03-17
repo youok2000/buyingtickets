@@ -16,11 +16,6 @@
  *{
   font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','Constantia',sans-serif;
  }
-
- body{
-   
- }
-
 a{
   text-decoration: none;
   color: black;
@@ -54,11 +49,11 @@ header{
   transition: .5s;
 }
 .header-list li:nth-child(3):hover{
-  transform: rotate(-12deg);
+  transform: rotate(-5deg);
   transition: .5s;
 }
 .header-list li:hover{
-  transform: rotate(12deg);
+  transform: rotate(5deg);
   transition: .5s;
 }
 /* flashデコレーション */

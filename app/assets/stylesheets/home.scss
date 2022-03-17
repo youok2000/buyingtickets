@@ -6,9 +6,21 @@
   height: 100%;
   opacity: 0.5;
 }
+
 .top-contents{
-  margin:10px 60px 0 60px;
-  border: 1px solid black;
+  margin: 5px 55px 0px 55px ;
+  border: 0.1px solid rgb(211, 205, 205);
+  transition:1s;
+  background-image: image-url('buying1.jpg');
+  background-size:cover;
+  background-position: center;
+  border-radius: 4px;
+  color: white;
+}
+.top-contents:hover{
+  margin:6px 60px 0px 60px;
+  border: 1.3px solid rgb(94, 93, 93);
+  transition: .5s;
 }
 
 // post-show
@@ -23,8 +35,9 @@
   margin: 15px;
   font-size: 20px;
   font-weight: bold;
-  border-bottom: 1px solid black;
+  // border-bottom: 1px solid black;
 }
 .news-list a{
-  border-bottom: 2px solid rgb(97, 95, 95);
+  color: white;
+  border-bottom: .5px solid rgb(255, 255, 255);
 }

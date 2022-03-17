@@ -41,11 +41,22 @@ header{
 }
 .header-list li{
   margin:0 20px;
+  transform: rotate(0deg);
+  transition: .5s;
 }
 .header-list li:nth-child(3){
   margin-left: 60px;
+  transform: rotate(0deg);
+  transition: .5s;
 }
-
+.header-list li:nth-child(3):hover{
+  transform: rotate(-12deg);
+  transition: .5s;
+}
+.header-list li:hover{
+  transform: rotate(12deg);
+  transition: .5s;
+}
 /* flashデコレーション */
 .flash-notice,
 .flash-false,

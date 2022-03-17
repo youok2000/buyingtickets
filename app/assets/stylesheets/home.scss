@@ -44,12 +44,15 @@
 }
 @media (max-width: 500px){
   .top-contents{
-    height:100vh;
-    margin:6px 60px 0px 60px;
+    // height:100vh;
+    // margin:6px 60px 0px 60px;
+    margin: 0;
+    // padding: 0;
     border: 0.1px solid rgb(211, 205, 205);
     transition:0s;
     border-radius: 1px;
     font-size: 10px;
+    width: 100%;
   }
   .top-contents:hover{
     margin:6px 60px 0px 60px;

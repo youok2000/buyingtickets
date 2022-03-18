@@ -110,3 +110,29 @@
   transition: .2s;
   transition-delay: .3s;
 }
+
+//スマホ画面
+
+@media (max-width: 500px){
+
+  .information-contents,
+  .login_form-contents,
+  .index-contents,
+  .show-contents{
+    margin: 30% 3% 0 3%;
+  }
+  .information-form,
+  .login-ticket-form,
+  .index-form,
+  .show-form{
+    padding: 0px;
+    width: 100%;
+  }
+
+  .button{
+    width: 40%;
+    margin:4% 0 0 26% ;
+    padding: 5px;
+  }
+
+}

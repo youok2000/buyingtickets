@@ -42,6 +42,10 @@
   color: white;
   border-bottom: .5px solid rgb(255, 255, 255);
 }
+
+
+
+
 @media (max-width: 500px){
 
 
@@ -51,7 +55,7 @@
     border:none;
     transition:none;
     border-radius: 0px;
-    color: rgb(109, 62, 62);
+    color: rgb(212, 212, 212);
   }
   .top-contents:hover{
     margin:0px;
@@ -62,20 +66,20 @@
   // post-show
   
   .news-list{
-    margin:3%;
+    margin:1% 9%;
     padding: 0px;
-    text-align: center;
+    // text-align: center;
   }
   .top-contents span{
     display: inline-block;
-    margin:30% 0 0 10px;
+    margin:54% 0 0 10px;
     font-size:15px;
     font-weight: bold;
     // border-bottom: 1px solid black;
   }
   .news-list a{
-    color: rgb(109, 62, 62);
-    border-bottom: .5px solid rgb(92, 74, 74);
+    color: rgb(212, 212, 212);
+    border-bottom: .5px dotted rgb(139, 119, 119);
     font-weight: bold;
     font-size: 12px;
   }

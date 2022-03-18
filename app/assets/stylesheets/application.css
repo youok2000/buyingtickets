@@ -166,8 +166,8 @@ header{
   /* add */
   header h1{
     position: absolute;
-    bottom: 0;
-    right:10px;
+    bottom: -10px;
+    right:10%;
     font-size: 15px;
   }
 
@@ -184,11 +184,15 @@ header{
     border-bottom: 1px solid rgb(75, 74, 74);
   }
   .header-list li{
-    margin:0px;
+    margin:0px 5px 0 0;
     transition: none;
     /* add */
-    font-size: 10px;
+    font-size: 5px;
     font-weight: bold;
+  }
+  .header-list li a{
+    display: block;
+    /* font-size: 3px; */
   }
   .header-list li:nth-child(3){
     margin-left: 60px;

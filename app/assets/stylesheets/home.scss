@@ -43,4 +43,42 @@
   border-bottom: .5px solid rgb(255, 255, 255);
 }
 @media (max-width: 500px){
+
+
+  .top-contents{
+    height:100vh;
+    margin: 0px ;
+    border:none;
+    transition:none;
+    border-radius: 0px;
+    color: rgb(109, 62, 62);
+  }
+  .top-contents:hover{
+    margin:0px;
+    border: none;
+    transition:none;
+  }
+  
+  // post-show
+  
+  .news-list{
+    margin:3%;
+    padding: 0px;
+    text-align: center;
+  }
+  .top-contents span{
+    display: inline-block;
+    margin:30% 0 0 10px;
+    font-size:15px;
+    font-weight: bold;
+    // border-bottom: 1px solid black;
+  }
+  .news-list a{
+    color: rgb(109, 62, 62);
+    border-bottom: .5px solid rgb(92, 74, 74);
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+
 }

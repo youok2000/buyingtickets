@@ -49,3 +49,43 @@
   text-align: left;
   margin-left: 4%;
 }
+
+
+@media (max-width: 500px){
+
+
+  .post-new-contents{
+    margin:30% 3% 0 3% ;
+  }
+  .post-new-form{
+    text-align: center;
+    margin-left: 0%;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  .post-new-button{
+    padding:5px 20px ;
+    border-radius: 2px;
+  }
+  
+  // post-show
+  
+  .post-show-contents{
+    width: 90%;
+    margin: 30% auto;
+  
+  }
+
+  .post-show-header{
+    margin-bottom: 8%;
+  }
+  
+  .post-show-item{
+    padding: 5px;
+    text-align: left;
+    margin-left: 2%;
+    font-size: 15px;
+  }
+
+}

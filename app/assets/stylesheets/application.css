@@ -254,5 +254,17 @@ header{
   font-size: 25px;
   padding: 0px;
 }
+
+
+
+.flash-notice,
+.flash-false,
+.flash-host,
+.flash-ok,
+.flash-success{
+  padding: 10px 0px;
+  top: auto;
+  bottom: 0;
+}
   
 }

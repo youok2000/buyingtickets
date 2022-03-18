@@ -47,3 +47,37 @@
   transition: .5s;
 }
 
+
+
+
+@media (max-width: 500px){
+
+.host_form-contents,
+.login_host_form-contents,
+.signup_host_form-contents{
+  margin:30% 3% 0 3%;
+}
+.host_form-form,
+.login_host_form-form,
+.signup_host_form-form{
+  padding: 0px;
+  width: 80%;
+}
+.host_form-form p{
+  margin: 0;
+  font-size: 15px;
+}
+
+.login_host_form-form input,
+.signup_host_form-form input{
+  width: 80%;
+  margin: 10px;
+  padding:10px 10px;
+  -webkit-appearance: none;
+}
+#host-button{
+  box-shadow:none;
+  -webkit-appearance: none;
+}
+
+}

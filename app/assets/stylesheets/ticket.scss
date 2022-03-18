@@ -129,6 +129,12 @@
     width: 100%;
   }
 
+  .information-form input,
+  .information-form select,
+  .login-ticket-form input{
+    font-size: 16px;
+}
+
   .button{
     width: 40%;
     margin:4% 0 0 26% ;

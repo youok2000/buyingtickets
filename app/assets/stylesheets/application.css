@@ -175,8 +175,8 @@ header{
     width:50px;
     height:30px;
     position: fixed;
-    top: 3%;
-    right: 5%;
+    top: 4%;
+    right: 8%;
     cursor: pointer;
   }
   .humburger-menu span{
@@ -203,8 +203,8 @@ header{
   }
   .is-open span:nth-child(1){
     width: 30px;
-    top: 40%;
-    transform: rotate(48deg);
+    top: 43%;
+    transform: rotate(45deg);
     transition: .5s;
   }
   .is-open span:nth-child(2){
@@ -215,7 +215,7 @@ header{
   .is-open span:nth-child(3){
     width: 30px;
     bottom: 49%;
-    transform: rotate(-48deg);
+    transform: rotate(-45deg);
     transition: .5s;
   }
 

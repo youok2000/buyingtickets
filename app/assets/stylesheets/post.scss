@@ -21,11 +21,14 @@
   box-sizing: border-box;
   width: 100%;
   padding:20px 10px ;
+  font-size: 16px;
+  border: 1px solid black;
 }
 
 .post-new-button{
-  padding:5px 10px ;
+  padding:10px 20px ;
   border-radius: 4px;
+  -webkit-appearance: none;
 }
 
 // post-show
@@ -33,7 +36,6 @@
 .post-show-contents{
   width: 60%;
   margin: 10% auto;
-
 }
 
 .post-show-header{

@@ -61,7 +61,7 @@
 .login_host_form-form,
 .signup_host_form-form{
   padding: 0px;
-  width: 80%;
+  width: 100%;
 }
 .host_form-form p{
   margin: 0;
@@ -70,15 +70,20 @@
 
 .login_host_form-form input,
 .signup_host_form-form input{
-  width: 80%;
-  margin: 10px;
+  width: 90%;
+  margin: 10px 0;
   padding:10px 10px;
+  font-size: 16px;
   // -webkit-appearance: none;
 }
 .host-button{
   box-shadow:none;
   width: 50%;
   // -webkit-appearance: none;
+}
+.host_form-form ul li{
+  margin: 10px 0px 20px 0px;
+  width: 100%;
 }
 
 }

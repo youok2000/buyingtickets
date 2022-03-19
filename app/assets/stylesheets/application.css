@@ -189,14 +189,35 @@ header{
   }
   .humburger-menu span:nth-child(1){
     top:0;
+    transition: .5s;
   }
   .humburger-menu span:nth-child(2){
+    opacity: 1;
+    left:0;
     top: 45%;
+    transition: .5s;
   }
   .humburger-menu span:nth-child(3){
     bottom: 0;
+    transition: .5s;
   }
-  
+  .is-open span:nth-child(1){
+    width: 30px;
+    top: 40%;
+    transform: rotate(48deg);
+    transition: .5s;
+  }
+  .is-open span:nth-child(2){
+    opacity: 0;
+    left:-500%;
+    transition: .5s;
+  }
+  .is-open span:nth-child(3){
+    width: 30px;
+    bottom: 49%;
+    transform: rotate(-48deg);
+    transition: .5s;
+  }
 
 
   header{
@@ -220,7 +241,8 @@ header{
     background-color: white;
     position: fixed;
     top: 10%;
-    right:-100%;
+    right:-150px;
+    opacity: 0;
     padding:10px;
     transition: .5s;
     border-radius: 4px;
@@ -243,7 +265,8 @@ header{
   }
   .open-header-list{
     right: 0px;
-    transition: .5s;
+    transition: .6s;
+    opacity: .8;
   }
   .header-list li{
     margin:15px 0px;
@@ -253,7 +276,7 @@ header{
     font-weight: bold;
   }
   .header-list li a{
-    color: rgb(214, 123, 123);
+    color: rgb(136, 77, 77);
     display: block;
     /* font-size: 10px; */
   }

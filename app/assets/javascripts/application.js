@@ -22,7 +22,7 @@ document.addEventListener("turbolinks:load", function(){
 $(function() {
   $('.humburger-menu').on('click', function() {
     $('.header-list').toggleClass('open-header-list');
-    // $('.humburger').toggleClass('is-open');
+    $('.humburger-menu').toggleClass('is-open');
   });
 
   // $(document).on('click','.overlay', function() {

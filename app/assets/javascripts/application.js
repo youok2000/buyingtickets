@@ -17,6 +17,8 @@
 //= require jquery_ujs
 //= require_tree .
 
+
+document.addEventListener("turbolinks:load", function(){
 $(function() {
   $('.humburger-menu').on('click', function() {
     $('.header-list').toggleClass('open-header-list');
@@ -27,4 +29,5 @@ $(function() {
   //   $('body').removeClass('is-open');
   //   $('#main').removeClass('overlay');
   // });
+});
 });

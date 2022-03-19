@@ -13,4 +13,18 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require jquery
+//= require jquery_ujs
 //= require_tree .
+
+$(function() {
+  $('.humburger-menu').on('click', function() {
+    $('.header-list').toggleClass('open-header-list');
+    // $('.humburger').toggleClass('is-open');
+  });
+
+  // $(document).on('click','.overlay', function() {
+  //   $('body').removeClass('is-open');
+  //   $('#main').removeClass('overlay');
+  // });
+});

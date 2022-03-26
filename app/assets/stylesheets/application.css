@@ -14,12 +14,14 @@
  *= require_self
  */
  body{
-  font-family: "Helvetica Neue",
+  font-family: "游ゴシック", YuGothic, "游ゴシック体", "Yu Gothic", sans-serif;
+
+  /* font-family: "Helvetica Neue",
   Arial,
   "Hiragino Kaku Gothic ProN",
   "Hiragino Sans",
   Meiryo,
-  sans-serif;
+  sans-serif; */
  }
  h2{
    font-weight: normal;
@@ -238,18 +240,19 @@ header{
 
   .header-list{
     display: block;
-    background-color: white;
+    background-color:black;
     position: fixed;
-    top: 10%;
-    right:-150px;
+    top: -50%;
+    right:0px;
+    left: 0px;
     opacity: 0;
     padding:10px;
     transition: .5s;
-    border-radius: 4px;
-    box-shadow: -0px 5px 10px rgb(75, 74, 74);
-    border-top: 1px solid rgb(97, 92, 92);
-    border-bottom: 1px solid rgb(100, 96, 96);
-    border-left: 1px solid rgb(105, 101, 101);
+    /* border-radius: 4px; */
+    /* box-shadow: -0px -5px 10px rgb(75, 74, 74); */
+    border-top: 1px solid rgb(70, 69, 69);
+    /* border-bottom: 1px solid rgb(100, 96, 96); */
+    /* border-left: 1px solid rgb(105, 101, 101); */
     
 
     /* display: flex; */
@@ -264,7 +267,10 @@ header{
     border-bottom: 1px solid rgb(75, 74, 74); */
   }
   .open-header-list{
+    left: 0;
     right: 0px;
+    top: 30%;
+    bottom: -10%;
     transition: .6s;
     opacity: .8;
   }
@@ -272,11 +278,11 @@ header{
     margin:15px 0px;
     transition: none;
     /* add */
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
   }
   .header-list li a{
-    color: rgb(56, 34, 34);
+    color: rgb(250, 248, 248);
     display: block;
     /* font-size: 10px; */
   }

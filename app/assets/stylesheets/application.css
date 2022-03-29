@@ -214,7 +214,7 @@ header{
     opacity: 0;
     left:-500%;
     transition: .5s;
-    transition-delay: .5s;
+    /* transition-delay: .5s; */
   }
   .is-open span:nth-child(3){
     width: 30px;

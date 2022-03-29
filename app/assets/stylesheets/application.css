@@ -15,7 +15,6 @@
  */
  body{
   font-family: "游ゴシック", YuGothic, "游ゴシック体", "Yu Gothic", sans-serif;
-
   /* font-family: "Helvetica Neue",
   Arial,
   "Hiragino Kaku Gothic ProN",
@@ -177,6 +176,7 @@ header{
     width:50px;
     height:30px;
     position: fixed;
+    z-index: 1000;
     top: 4%;
     right: 8%;
     cursor: pointer;
@@ -198,6 +198,7 @@ header{
     left:0;
     top: 45%;
     transition: .5s;
+    transition-delay: .7s;
   }
   .humburger-menu span:nth-child(3){
     bottom: 0;
@@ -213,6 +214,7 @@ header{
     opacity: 0;
     left:-500%;
     transition: .5s;
+    transition-delay: .5s;
   }
   .is-open span:nth-child(3){
     width: 30px;
@@ -269,13 +271,13 @@ header{
   .open-header-list{
     left: 0;
     right: 0px;
-    top: 30%;
-    bottom: -10%;
+    top: -5%;
+    bottom: -5%;
     transition: .6s;
     opacity: .8;
   }
   .header-list li{
-    margin:15px 0px;
+    margin:30px 0px 30px 8px;
     transition: none;
     /* add */
     font-size: 16px;
@@ -287,7 +289,7 @@ header{
     /* font-size: 10px; */
   }
   .header-list li:nth-child(3){
-    margin-left: 0px;
+    margin-left: 8px;
     transition:none;
   }
   .header-list li:nth-child(3):hover{

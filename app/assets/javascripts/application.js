@@ -34,6 +34,10 @@ $(function() {
     $('.back-screen').toggleClass('back-screen-open');
   });
 
+  $(function(){
+    $('.flash-notice, .flash-false, .flash-host, .flash-ok, .flash-success').fadeOut(4000);  
+  });
+
   // $(document).on('click','.overlay', function() {
   //   $('body').removeClass('is-open');
   //   $('#main').removeClass('overlay');

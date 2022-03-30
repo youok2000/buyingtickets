@@ -25,6 +25,15 @@ $(function() {
     $('.humburger-menu').toggleClass('is-open');
   });
 
+  $('.online-ticket').on('click', function() {
+    $('.online-ticket').toggleClass('online-screen-close');
+    $('.back-screen').toggleClass('back-screen-open');
+  });
+  $('.back-screen').on('click', function() {
+    $('.online-ticket').toggleClass('online-screen-close');
+    $('.back-screen').toggleClass('back-screen-open');
+  });
+
   // $(document).on('click','.overlay', function() {
   //   $('body').removeClass('is-open');
   //   $('#main').removeClass('overlay');

@@ -19,7 +19,7 @@
         <div class="online-ticket">
 
            <div class="online-ticket-header">
-              <span>TICKET</span>
+              <span>演奏会名</span>
               <div class="online-ticket-close">
                 <%= link_to("×","/ticket/logout", {method: "post"})%>
               </div>
@@ -30,11 +30,17 @@
                 <p><%=@login_ticket.id%></p>
               </div>
               <div class="login-ticket-name">
-                <p>Name</p>
+                <p>お名前</p>
                 <p><%= @login_ticket.name%></p>
               </div>
            </div>
 
+        </div>
+        <div class="back-screen">
+         <p>ここに演奏会の詳細を載せる</p>
+         <div class="online-ticket-close">
+                <%= link_to("×","/ticket/logout", {method: "post"})%>
+              </div>
         </div>
         
 

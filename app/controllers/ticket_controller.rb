@@ -42,7 +42,7 @@ class TicketController < ApplicationController
       phone_number: params[:phone_number]
     )
     if @buyer
-      flash[:notice] = "表示中"
+      # flash[:notice] = "表示中"
       session[:buyer_id] = @buyer.id
       redirect_to("/")
 

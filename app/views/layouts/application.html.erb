@@ -33,15 +33,18 @@
                 <p>お名前</p>
                 <p><%= @login_ticket.name%></p>
               </div>
+              <div class="switch1">→裏面へ</div>
            </div>
 
         </div>
+
         <div class="back-screen">
          <p>ここに演奏会の詳細を載せる</p>
          <div class="online-ticket-close">
-                <%= link_to("×","/ticket/logout", {method: "post"})%>
-              </div>
-        </div>
+          <%= link_to("×","/ticket/logout", {method: "post"})%>
+         </div>
+         <div class="switch2">→表面へ</div>
+       </div>
         
 
      <% else%>
